@@ -16,6 +16,7 @@ const postSchema = new mongoose.Schema(
     category: {
       type: mongoose.SchemaTypes.ObjectId,
       ref: "Category",
+      required: true
     },
     tags: {
         type: [String],

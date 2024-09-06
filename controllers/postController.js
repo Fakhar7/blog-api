@@ -2,7 +2,7 @@ const Post = require("../models/postModel");
 
 async function getAllPosts(req, res) {
     try {
-        const posts = await Post.find().populate("category");
+        const posts = await Post.find().populate("category").select("-__v");
         res.status(200).send(posts);
     } catch (ex) {
         res.status(500).json({ message: "Internal server error" });

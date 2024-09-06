@@ -1,6 +1,6 @@
 const express = require("express");
 const controller = require("../controllers/postController");
-const { validateObjectIdMiddleware } = require("../middlewares/objectIdMiddleware");
+const { validateObjectIdMiddleware } = require("../middlewares/objectIdValidatorMiddleware");
 
 const router = express.Router();
 
