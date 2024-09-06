@@ -7,7 +7,7 @@ async function validateObjectIdMiddleware(req, res, next) {
     if (!result.isValid)
         return res
             .status(400)
-            .json({ message: "Invalid reference", error: result.error });
+            .json({ error: result.error });
 
     next();
 }

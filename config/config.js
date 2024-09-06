@@ -7,6 +7,7 @@ const FORGET_PASSWORD_SECRET_KEY = process.env.FORGET_PASSWORD_SECRET_KEY;
 const FRONTEND_URL = process.env.FRONTEND_URL;
 const EMAIL_API_KEY = process.env.EMAIL_API_KEY;
 const MY_EMAIL= process.env.MY_EMAIL;
+const API_ACCESS_PASSWORD = process.env.API_ACCESS_PASSWORD;
 
 module.exports = {
     PORT,
@@ -16,4 +17,5 @@ module.exports = {
     FRONTEND_URL,
     EMAIL_API_KEY,
     FORGET_PASSWORD_SECRET_KEY,
+    API_ACCESS_PASSWORD,
 }
